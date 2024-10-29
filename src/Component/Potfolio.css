@@ -1,0 +1,79 @@
+
+.portfolio{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+}
+.portfolio-title{
+    width: 100%;
+    height: 34vh;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    position: relative;
+}
+.portfolio-title h1{
+    color: var(--color);
+    font-size: 55px;
+    font-weight: 900;
+    position: absolute;
+    top: 70px;
+    left: 410px;
+}
+.portfolio-title .p-title-bg{
+    color: var(--text-bg);
+    font-size: 110px;
+    font-weight: 900;
+    letter-spacing: 20px;
+}
+.p-navbar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.p-navbar ul{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.p-navbar ul button{
+    color: var(--color);
+    text-decoration: none;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;
+
+}
+.p-navbar ul button:hover{
+    color: #ffb400;
+}
+.portfolio .card1{
+    width: 100%;
+    height: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 60px;
+    position: relative;
+}
+.portfolio .card1 .bg-gallery{
+    font-weight: 600;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb400;
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.card1:hover .bg-gallery{
+    visibility: visible;
+}

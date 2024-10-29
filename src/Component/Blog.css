@@ -1,0 +1,63 @@
+body{
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blog{
+    background-color: var(--background-color);
+}
+.blog-title{
+    width: 100%;
+    height: 34vh;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.blog-title h1{
+    color: var(--color);
+    font-size: 55px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.blog-title .b-title-bg{
+    position: absolute;
+    font-size: 120px;
+    font-weight: 900;
+    letter-spacing: 10px;
+    color: var(--text-bg);
+}
+.blog-box{
+    color: var(--color);
+    margin: 20px 30px;
+    row-gap: 60px;
+    
+}
+.blog-box .image{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.blog-box img:hover{
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.1);
+   
+}
+.blog-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.blog-box h5{
+    font-weight: 700;
+}
+.blog-box h5:hover{
+    color: #ffb400;
+}
+.blog-box .box-detail{
+    border-top: 5px solid #ffb400;
+    background-color: var(--bg);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+}
