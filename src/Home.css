@@ -118,10 +118,11 @@ body {
 }
 @media screen and (max-width: 768px) {
   .homepage {
-    margin-top: 100px;
+    margin-top: 300px;
     width: 880px;
     height: 170vh;
     padding: 1rem;
+    overflow:visible;
     /* border: 1px solid white; */
   }
   .back {
@@ -136,6 +137,7 @@ body {
     position: relative;
     left: 170px;
     border: 6px solid #ffb400;
+    margin-bottom: 100px;
   }
   .card img {
     border-radius: 50%;
@@ -157,5 +159,6 @@ body {
   .home-detail .button {
     /* font-weight: normal; */
     right: 70px;
+    margin-top: 40px;
   }
 }
