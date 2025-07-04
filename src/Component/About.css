@@ -230,14 +230,12 @@
         width: 1000px;
 
     }
-    .achivement .card1{
-        /* width: 200px; */
-        margin-left: 10px;
-    }
     .achivement{
-        border:1px solid white ;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
-
-   
-
+    .achivement .card1{
+        margin-left:150px ;
+    }
 }
