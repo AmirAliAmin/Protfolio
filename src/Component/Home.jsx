@@ -2,12 +2,17 @@ import React from "react";
 import "../Home.css";
 import image from "../Images/Amir1.png";
 import { FaArrowRight } from "react-icons/fa";
-import About from "./About";
-import Contact from "./Contact";
-import Blog from "./Blog";
-import Portfolio from "./Portfolio";
+import About from "./About"
+import Contact from "./Contact"
+import Portfolio from './Portfolio'
+import Blog from './Blog'
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate(); 
+   const handleClick = () => {
+    navigate("/about");                  
+  };
   return (
     <div>
       <div className="homepage">
@@ -35,37 +40,19 @@ export default function Home() {
             type="button"
             data-bs-toggle="modal"
             data-bs-target="#myModal"
+            onClick={handleClick}
           >
             <h2 className="text-center">MORE ABOUT ME </h2>
-
             <div className="icon">
               <FaArrowRight />
             </div>
           </div>
-          <div className="modal" id="myModal" style={{width:"90%"}} >
-            <div className="modal-dialog" style={{width:"100%", maxWidth: "100%"}} >
-              <div class="modal-content"style={{width:"100%"}}  >
-                <div className="modal-header" style={{background:"black"}}>
-                  <h4 className="modal-title"></h4>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal" style={{background:"white"}}
-                  >X</button>
-                </div>
-                <div className="modal-body" style={{width:"100%", padding: "0",background:"black"}}>
-                <About/>
-
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-      {/* <About />
+      <About />
       <Portfolio />
       <Contact />
-      <Blog /> */}
+      <Blog />
     </div>
   );
 }

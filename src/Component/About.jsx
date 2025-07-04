@@ -21,8 +21,8 @@ export default function About() {
     },
     {
       h: "3.8",
-      dis: "CGPA "
-    }
+      dis: "CGPA ",
+    },
   ];
   const skill = [
     {
@@ -74,11 +74,11 @@ export default function About() {
       h: "Web Development Certificate - IUB Skills & Career Development Society x NeuraFinity",
       dis: "Completed an intensive web development certification program focused on HTML, CSS, JavaScript, and modern frameworks.",
     },
-   {
-  date: "2024 - 2025",
-  h: "Final Year Project - Emotion Detection & Recommendation System",
-  dis: "Developed an Emotion Detection System that recommends movies and music based on user emotions. The frontend was built using React, while the backend and machine learning model were implemented using Flask and Python.",
-}
+    {
+      date: "2024 - 2025",
+      h: "Final Year Project - Emotion Detection & Recommendation System",
+      dis: "Developed an Emotion Detection System that recommends movies and music based on user emotions. The frontend was built using React, while the backend and machine learning model were implemented using Flask and Python.",
+    },
   ];
 
   function handleDownload() {
@@ -102,41 +102,49 @@ export default function About() {
           <div className="col-lg-6 col-md-12 col-sm-12 personal-detail">
             <h2 className="h2">Personal Infos</h2>
             <div className="row mt-3">
-              <div className="col-5">
-                <ul>
-                  <li>
-                    First Name:<span>Amir Ali</span>
-                  </li>
-                  <li>
-                    Age: <span>22 Years</span>
-                  </li>
-                  <li>
-                    Language: <span>Urdu,English</span>
-                  </li>
-                  <li>
-                    Phone: <span>+92312-0848892</span>
-                  </li>
-                </ul>
+              {/* Flex container for personal info lists */}
+              <div className="d-flex justify-content-between w-100">
+                {/* Left list */}
+                <div className="col-12 col-md-6">
+                  <ul>
+                    <li>
+                      First Name: <span>Amir Ali</span>
+                    </li>
+                    <li>
+                      Age: <span>22 Years</span>
+                    </li>
+                    <li>
+                      Language: <span>Urdu, English</span>
+                    </li>
+                    <li>
+                      Phone: <span>+92312-0848892</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Right list */}
+                <div className="col-12 col-md-6 mb-3">
+                  <ul>
+                    <li>
+                      Last Name: <span>Amin</span>
+                    </li>
+                    <li>
+                      Nationality: <span>Pakistan</span>
+                    </li>
+                    <li>
+                      Address: <span>Lahore</span>
+                    </li>
+                    <li>
+                      Email: <span>aliaminamir77@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div className="col-5">
-                <ul>
-                  <li>
-                    Last Name:<span>Amin</span>
-                  </li>
-                  <li>
-                    Nationality: <span>Pakistan</span>
-                  </li>
-                  <li>
-                    Adress: <span>BWP</span>
-                  </li>
-                  <li>
-                    Email:<span>aliaminamir77@gmail.com</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="button btn">
-                <h2 className="text-center" onClick={handleDownload}>
-                  Download cv{" "}
+
+              {/* Download Button */}
+              <div className="button btn mt-3">
+                <h2 className="text-center m-0" onClick={handleDownload}>
+                  Download CV
                 </h2>
                 <div className="icon" onClick={handleDownload}>
                   <FiMessageCircle />
@@ -144,16 +152,18 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12 achivement">
-            <div className="row">
-              {card.map((i, index) => (
-                <div className="col-5" key={index}>
-                  <div className="card1">
-                    <h1>
-                      {i.h}
+          <div className="col-12 col-lg-6 achivement">
+            <div className="row g-3">
+              {card.map((item, idx) => (
+                <div className="col-6" key={idx}>
+                  {" "}
+                  {/* ⬅️ Force 2 per row */}
+                  <div className="card1 text-center">
+                    <h1 className="mb-0">
+                      {item.h}
                       <sup>+</sup>
                     </h1>
-                    <p>{i.dis}</p>
+                    <p className="mb-0">{item.dis}</p>
                   </div>
                 </div>
               ))}

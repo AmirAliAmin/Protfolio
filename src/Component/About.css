@@ -39,7 +39,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .personal-detail .h2{
     /* width: 50%; */
@@ -51,7 +51,7 @@
     margin-left: 20px;
 }
 .personal-detail ul{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     list-style: none;
     color: var(--color);
     padding-left: 5px;
@@ -227,7 +227,15 @@
         font-weight: 700;
     }
     .personal-detail{
-        width: 900px;
+        width: 1000px;
+
+    }
+    .achivement .card1{
+        /* width: 200px; */
+        margin-left: 10px;
+    }
+    .achivement{
+        border:1px solid white ;
     }
 
    
