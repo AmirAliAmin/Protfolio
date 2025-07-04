@@ -118,6 +118,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .homepage {
+    margin-top: 100px;
     width: 880px;
     height: 170vh;
     padding: 1rem;
