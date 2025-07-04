@@ -62,10 +62,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <About />
+      {/* <About />
       <Portfolio />
       <Contact />
-      <Blog />
+      <Blog /> */}
     </div>
   );
 }

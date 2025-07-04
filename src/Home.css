@@ -119,7 +119,7 @@ body {
 @media screen and (max-width: 768px) {
   .homepage {
     width: 880px;
-    height: 200vh;
+    height: 170vh;
     padding: 1rem;
     /* border: 1px solid white; */
   }
