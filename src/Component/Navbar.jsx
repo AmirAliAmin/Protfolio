@@ -41,6 +41,16 @@ export default function Navbar() {
           <li className='n-icon5'><Link to="blog"><ImBlogger /></Link></li>
         </ul>
       </div>
+       <div className='navbar'>
+        <ul>
+          <li className='n-icon11'><Link to="/"><FaHome /></Link></li>
+          <li className='n-icon21'><Link to="about"><IoPerson /></Link></li>
+          <li className='n-icon31'><Link to="portfolio"><BiSolidShoppingBagAlt /></Link></li>
+          <li className='n-icon41'><Link to="contact"><MdContactPage /></Link></li>
+          <li className='n-icon51'><Link to="blog"><ImBlogger /></Link></li>
+        </ul>
+
+      </div>
     </div>
   );
 }

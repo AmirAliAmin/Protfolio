@@ -102,7 +102,7 @@ export default function About() {
           <div className="col-lg-6 col-md-12 col-sm-12 personal-detail">
             <h2 className="h2">Personal Infos</h2>
             <div className="row mt-3">
-              <div className="col-5 ">
+              <div className="col-5">
                 <ul>
                   <li>
                     First Name:<span>Amir Ali</span>

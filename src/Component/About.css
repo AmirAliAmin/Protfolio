@@ -39,6 +39,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    border: 1px solid white;
 }
 .personal-detail .h2{
     /* width: 50%; */
@@ -50,6 +51,7 @@
     margin-left: 20px;
 }
 .personal-detail ul{
+    border: 1px solid white;
     list-style: none;
     color: var(--color);
     padding-left: 5px;
@@ -218,4 +220,16 @@
     background-color:rgba(62, 60, 60, 0.587);
     position: absolute;
     top: 40px;
+}
+@media screen and (max-width: 768px){
+    .title-bg{
+        left: 10px;
+        font-weight: 700;
+    }
+    .personal-detail{
+        width: 900px;
+    }
+
+   
+
 }

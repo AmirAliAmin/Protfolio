@@ -21,6 +21,16 @@
     right: 0px;
     z-index: 100;
 }
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid white; */
+    width: 100%;
+    position: fixed;
+    bottom: -120px;
+    z-index: 100;
+    visibility: hidden;
+}
 ul{
     list-style: none;
     margin: 120px 10px;
@@ -160,4 +170,13 @@ ul li:hover::before{
 }
 ul li:hover a{
     background-color: #ffb400;
+}
+@media screen and (max-width: 768px){
+    .sidebar{
+        visibility: hidden;
+    }
+    .navbar ul{
+        visibility: visible;
+        /* background-color: #ffb400; */
+    }
 }
