@@ -143,7 +143,7 @@ export default function Portfolio() {
             </li>
           </ul>
         </div>
-        <div className="row mt-5 container card-body">
+        <div className="row mt-5 container card-body2">
           {items.map((item, index) => (
             <div className="col-lg-4 card-body1 col-md-6 col-sm-6" key={index}>
               <div className="card1">
