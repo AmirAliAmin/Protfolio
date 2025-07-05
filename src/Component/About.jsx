@@ -98,7 +98,7 @@ export default function About() {
           </h1>
           <span className="title-bg">resume</span>
         </div>
-        <div className="row personal-info">
+        <div className="row personal-info container">
           <div className="col-lg-6 col-md-12 col-sm-12 personal-detail">
             <h2 className="h2">Personal Infos</h2>
             <div className="row mt-3">
@@ -173,7 +173,7 @@ export default function About() {
         <div className="my_skill">
           <h3 className="text-center text-sm-center">MY SKILLS</h3>
           {/* 1️⃣ Put container outside the row for proper padding */}
-          <div className="container pb-5" style={{width:"880px"}}>
+          <div className="mx-auto pb-5" style={{width:"1050px"}}>
             {/* 2️⃣ g-4 adds gutter (space) between cards */}
             <div className="row g-6">
               {skill.map((item, idx) => (

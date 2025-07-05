@@ -61,3 +61,8 @@ body{
     padding: 20px;
     border-radius: 0px 0px 10px 10px;
 }
+  @media screen and (max-width: 768px){
+    .blog-box{
+        width: 880px;
+    }
+  }

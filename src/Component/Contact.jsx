@@ -19,8 +19,8 @@ export default function Contact() {
                 <h1>get in <span style={{color:"#ffb400"}}>touch</span></h1>
                 <span className='c-title-bg'>contact</span>
             </div>
-            <div className='row container mx-5'>
-                <div className='col-lg-4 col-md-12'>
+            <div className='row contact-con container mx-5'>
+                <div className='col-lg-4 col-md-12 col-sm-12'>
                     <h3>Don't be shy !</h3>
                     <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     <div className='card2'>

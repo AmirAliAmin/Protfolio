@@ -143,9 +143,9 @@ export default function Portfolio() {
             </li>
           </ul>
         </div>
-        <div className="row mt-5 container">
+        <div className="row mt-5 container card-body">
           {items.map((item, index) => (
-            <div className="col-lg-4 col-md-6 col-sm-12" key={index}>
+            <div className="col-lg-4 card-body1 col-md-6 col-sm-6" key={index}>
               <div className="card1">
                 <div className="bg-gallery">
                   <p>{item.p}</p>
