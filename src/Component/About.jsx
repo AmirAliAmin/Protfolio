@@ -171,33 +171,36 @@ export default function About() {
           </div>
         </div>
         <div className="my_skill">
-          <h3 className="text-center">MY SKILLS</h3>
-          <div className="row container mx-5">
-            {skill.map((i, index) => (
-              <div className="col-lg-3 col-md-3 col-sm-5" key={index}>
-                <div className="skills">
-                  <div
-                    className="language"
-                    style={{
-                      borderTop: ` ${i.borderTop}`,
-                      borderLeft: ` ${i.borderLeft}`,
-                      borderRight: ` ${i.borderRight}`,
-                    }}
-                  >
-                    <h3>{i.h}</h3>
+          <h3 className="text-center text-sm-center">MY SKILLS</h3>
+          {/* 1️⃣ Put container outside the row for proper padding */}
+          <div className="container pb-5" style={{width:"880px"}}>
+            {/* 2️⃣ g-4 adds gutter (space) between cards */}
+            <div className="row g-6">
+              {skill.map((item, idx) => (
+                <div className="col-4 col-sm-6 col-lg-3" key={idx}>
+                  <div className="skills">
+                    <div
+                      className="language"
+                      style={{
+                        borderTop: item.borderTop,
+                        borderLeft: item.borderLeft,
+                        borderRight: item.borderRight,
+                      }}
+                    >
+                      <h3>{item.h}</h3>
+                    </div>
+                    <p>{item.dis}</p>
                   </div>
-                  <p>{i.dis}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
         <div className="experience">
           <h4 className="text-center">EXPERIENCE & EDUCATION</h4>
-
-          <div className="row container">
+          <div className="row">
             {education.map((i, index) => (
-              <div className="col-lg-5 c-icon col-12" key={index}>
+              <div className="col-lg-5 col-sm-4 c-icon col-12" key={index}>
                 <div className="icon">
                   <IoBagHandle />
                 </div>
